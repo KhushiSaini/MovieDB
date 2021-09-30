@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Movie Database</title>
+</head>
+<body>
+	<strong><h1>LIST OF MOVIES :-</h1></strong>
+	<h3>Page: {{response.page}}</h3>
+	<h3>Moives: {{original_title}}</h3>
+	<h3>Description:{{overview}}</h3>
+	<h5>Results: {{response.results}}</h5>
+	
+
+	{% for i in response %}
+	{{i.title}}
+	{% endfor%}
+
+</body>
+</html>
